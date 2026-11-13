@@ -18,9 +18,13 @@ print(suma/5)
 
 # Exercici 3: Buscar el màxim d'una llista
 # Donada la llista de números següent:
-# numeros = [15, 5, 25, 10, 20]
+numeros = [15, 5, 25, 10, 20]
 # Troba el número màxim de la llista fent servir un bucle for.
-
+max = numeros[0]
+for i in numeros[1:]:
+    if i>max:
+        max = i
+print(max)
 # Exercici 4: Filtrar cadenes per longitud
 # Donada la llista de paraules següent:
 # paraules = ["casa", "arbre", "sol", "elefant", "lluna"]
