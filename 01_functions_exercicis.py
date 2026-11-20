@@ -5,17 +5,40 @@
 # Exercici 1: Funció de salutació
 # Crea una funció saludar_a(nom, salutacio="Hola") que imprimeixi la salutació seguida del nom.
 # Prova-la amb i sense el segon argument.
+def saludar_a(nom, salutacio="Howdy"):
+    print(f"{salutacio} {nom}")
+
+saludar_a("Mar")
 
 # Exercici 2: Parell o senar
 # Crea una funció es_parell(numero) que retorni True si el número és parell i False si no ho és.
+def es_parell(numero):
+    return numero%2==0
+numero= int(input("Insereix un num: "))
+print(es_parell(numero))
 
 # Exercici 3: Mitjana d'una llista
 # Crea una funció mitjana(numeros) que rebi una llista de números i en retorni la mitjana.
 # Fes servir un bucle for.
+def mitjana(numeros):
+    suma = 0
+    for i in numeros:
+        suma += i
+    return suma/len(numeros)
+average = mitjana([2,2,2,2,2])
+print(average)
 
 # Exercici 4: Suma amb *args
 # Crea una funció sumar_tot(*args) que retorni la suma de tots els números rebuts.
 # Prova-la amb 2, 5 i 10 arguments.
+def sumar_tot(*args):
+    sum = 0
+    for i in args:
+        sum+=i
+    return sum
+
+
+
 
 # Exercici 5: Taula de multiplicar
 # Crea una funció taula_multiplicar(numero, limit=10) que imprimeixi la taula de multiplicar
